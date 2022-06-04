@@ -1,4 +1,4 @@
-module idblib
+module github.com/lucaspape/idblib
 
 go 1.18
 
