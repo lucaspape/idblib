@@ -1,4 +1,4 @@
-package main
+package idblib
 
 func levenshtein(str1, str2 []rune) int {
 	s1len := len(str1)
