@@ -1,0 +1,6 @@
+github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
+github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/lucaspape/idblib v0.0.0-20220604191844-f7e81bf743d2 h1:BOcf6v+cYk4F9fl9zHGXcCN8aflrbchcVedHoqVbvDQ=
+github.com/lucaspape/idblib v0.0.0-20220604191844-f7e81bf743d2/go.mod h1:cV1dXggL+DzfqXrD2PyBGmKZn4aTYnHPsj9wHvzxvf8=
+github.com/lucaspape/idblib v0.0.0-20220604192230-5bd647fea0fc h1:MNyIKJY6K9lGHvadY1VrAXcUYFe6ZaqndlLZXPQQvd0=
+github.com/lucaspape/idblib v0.0.0-20220604192230-5bd647fea0fc/go.mod h1:cV1dXggL+DzfqXrD2PyBGmKZn4aTYnHPsj9wHvzxvf8=
