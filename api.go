@@ -47,7 +47,7 @@ func (api Api) CreateDatabase(name interface{}) (map[string]interface{}, error) 
 		return m, err
 	}
 
-	err = api.loadDatabase(name.(string))
+	err = api.LoadDatabase(name.(string))
 
 	if err != nil {
 		return m, err
@@ -59,7 +59,7 @@ func (api Api) CreateDatabase(name interface{}) (map[string]interface{}, error) 
 	return m, nil
 }
 
-func (api Api) loadDatabase(name string) error {
+func (api Api) LoadDatabase(name string) error {
 	database, err := NewDatabase(name, api.databasePath)
 
 	if err != nil {
