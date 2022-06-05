@@ -2,7 +2,13 @@ import java.io.File
 
 class IdbJNI {
     init {
-        System.load(File("../lib/idblib.so").canonicalPath)
+        if(isWindows()){
+            System.load(File("idblib.dll").canonicalPath)
+        }else if(isLinux()){
+            System.load(File("idblib.so").canonicalPath)
+        }else{
+            throw java.lang.Exception("Operating system not supported by idblib")
+        }
     }
 
     external fun Init(databasePath: String): String

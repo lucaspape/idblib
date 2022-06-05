@@ -21,7 +21,10 @@ func Init(databasePathC *C.char) {
 func resultToC(m map[string]interface{}, err error) *C.char {
 	rM := make(map[string]interface{})
 	rM["result"] = m
-	rM["error"] = fmt.Sprint(err)
+
+	if err != nil {
+		rM["error"] = fmt.Sprint(err)
+	}
 
 	j, _ := json.Marshal(rM)
 	jS := C.CString(string(j))

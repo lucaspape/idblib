@@ -18,3 +18,4 @@ lib/idblib.h
 lib/idblib.so
 java/out
 java/databases
+java/target
