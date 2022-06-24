@@ -239,7 +239,7 @@ func (objects Objects) skipAndLimit(skip *int64, limit *int64) Objects {
 
 	if skip != nil && limit != nil {
 		for i, object := range objects.objects {
-			if int64(i) >= *skip && int64(i) < *limit {
+			if int64(i) >= *skip && int64(i) < (*skip+*limit) {
 				results = append(results, object)
 			}
 		}
